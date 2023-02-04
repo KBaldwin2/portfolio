@@ -1,0 +1,75 @@
+.display {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    max-width: 100%;
+    height: 300px;
+    cursor: pointer;
+    animation: slide-down 700ms ease-out forwards;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+  }
+
+  .display:hover .overlay {
+    display: block;
+    background: rgba(0, 0, 0, .5);
+  }
+
+  image {
+    height: 300px;
+    left: 0;
+  }
+  
+  .button {
+    position: absolute;
+    border-radius: 50%;
+    width: 500px;
+    height: 350px;
+    left:0;
+    top: 150px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+  }
+  
+  .button a {
+    width: 200px;
+    font-family: 'Oswald';font-size: 12px;
+    background-color: #E27D60;
+    border-radius: 50%;
+    padding: 32px 32px;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .display:hover .button {
+    opacity: 1;
+  }
+
+  @keyframes slide-down {
+    from {
+      opacity: 0;
+      transform: translateY(-3rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width:550px) {
+    .display{
+    margin-bottom: -100px;
+    }
+  }
+
+  

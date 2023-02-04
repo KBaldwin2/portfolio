@@ -1,0 +1,101 @@
+.img {
+  width: 100%;
+  animation: img-entrance 700ms ease-out forwards;
+}
+
+.container {
+  animation: card-entrance 700ms ease-out forwards;
+  background-color: #41b3a3;
+}
+
+.title {
+  font: 200 130px/0.8 "Great Vibes", cursive;
+  color: #08415c;
+  font-weight: 50;
+  font-size: 42px;
+  margin-left: 20%;
+}
+
+.flex p {
+  color: white;
+  font-weight: 900;
+  text-align: justify;
+}
+
+.flex li {
+  color: #553d67;
+  font-size: 20px;
+  font-family: "oswald";
+}
+
+.flex ul {
+  columns: 2;
+  width: 50%;
+}
+
+.line {
+  border-left: 1px solid #553d67;
+  height: 75px;
+}
+
+.email {
+  margin-left: 0.5rem;
+  align-content: center;
+}
+
+.block {
+  display: flex;
+  vertical-align: middle;
+}
+
+.flex li::marker {
+  color: #553d67;
+  height: 50px;
+}
+
+@keyframes img-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-entrance {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 550px) {
+  .flex {
+    height: 375px;
+  }
+
+  .flex h2 {
+    font-size: 10px;
+    word-wrap: normal;
+  }
+
+  .flex p {
+    font-size: 11px;
+  }
+  .flex li {
+    font-size: 12px;
+  }
+  .flex ul {
+    width: 80%;
+    margin-left: -20px;
+  }
+  .line{
+    height: 40px;
+  }
+}
