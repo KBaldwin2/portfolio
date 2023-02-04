@@ -70,6 +70,15 @@
     .display{
     margin-bottom: -100px;
     }
+
+    .display:hover .button {
+      opacity: 0;
+    }
+
+    .display:hover .overlay {
+      display: block;
+      background: rgba(0, 0, 0, 0);
+    }
   }
 
   

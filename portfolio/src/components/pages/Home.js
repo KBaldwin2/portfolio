@@ -9,8 +9,8 @@ export default function Home() {
       </div>
       <div className={classes.typewriter}>
         <h2>
-          I am a software developer who likes to problem solve, design
-          and code cool things.
+        I am a software developer with a passion for programming, design and
+          pursuing big ideas. 
         </h2>
       </div>
     </div>
