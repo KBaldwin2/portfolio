@@ -18,11 +18,11 @@
 
 .image {
     width: 100%;
-    height:fit-content;
-    object-fit: cover;
 }
 
 @keyframes swipe {
     from { width: 0 }
     to { width: 100% }
 }
+
+
