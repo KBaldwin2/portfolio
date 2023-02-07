@@ -7,7 +7,7 @@
   white-space: nowrap;
   margin: 1 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 5s;
+  animation: typing 3.5s steps(45, end);
 }
 
 .typewriter {
@@ -124,7 +124,7 @@
   .typewriter h1 {
     font-size: 50px;
     margin-top: 0;
-    animation: none;
+    animation: typing 3s steps(45, end);
   }
   .container {
     background-size: 150%;

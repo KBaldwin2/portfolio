@@ -9,7 +9,7 @@ export default function Home() {
       </div>
       <div className={classes.typewriter}>
         <h2>
-        I am a software developer with a passion for design and building simple, user-friendly applications.
+        I am a software developer with a passion for design and building clean, user-friendly applications.
         </h2>
       </div>
     </div>

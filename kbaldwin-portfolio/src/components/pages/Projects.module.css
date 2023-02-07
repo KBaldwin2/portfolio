@@ -1,8 +1,7 @@
 .image {
-    width: 100%;
-    height:fit-content;
-    object-fit: cover;
-    padding-top: 0rem;
+    width: auto ;
+    max-width: 100% ;
+    height: auto ;
 }
 
 .video {
