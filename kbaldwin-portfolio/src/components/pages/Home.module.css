@@ -31,7 +31,7 @@
   background-image: none;
   background-repeat: no-repeat;
   background-position: 0 0;
-  animation: animatedTriangle 17s infinite ease-out forwards;
+  animation: animatedTriangle 10s infinite ease-out forwards;
 }
 
 .typewriter {
@@ -40,10 +40,10 @@
 
 @keyframes animatedTriangle {
   0% {
-    background-image: url("/public/images/Home/Home (2).png");
+    background-image: url("../../assets/Home/Home (2).png");
   }
-  25% {
-    background-image: url("/public/images/Home/Home (3).png");
+  15% {
+    background-image: url("../../assets/Home/Home (3).png");
   }
   40% {
     background-image: url("/public/images/Home/Home (4).png");
