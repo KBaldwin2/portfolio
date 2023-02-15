@@ -1,56 +1,54 @@
-.img {
-  width: 100%;
-  animation: img-entrance 700ms ease-out forwards;
+
+.button {
+  width: 95%;
+  background-color: #04fff7;
+  font-size:18px;
+  color: #062f42;
+  border-radius: 8px;
+  border-color: #062f42;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 2.5%;
 }
 
-.container {
-  animation: card-entrance 700ms ease-out forwards;
-  background-color: #41b3a3;
+.button:hover {
+  background-color: #ff05ac;
 }
 
-.title {
-  font: 200 130px/0.8 "Great Vibes", cursive;
-  color: #08415c;
-  font-weight: 50;
-  font-size: 42px;
-  margin-left: 20%;
-}
-
-.flex p {
-  color: white;
-  font-weight: 900;
-  text-align: justify;
-}
 
 .flex li {
-  color: #553d67;
-  font-size: 20px;
+  color: #04fff7;
+  font-size: 18px;
   font-family: "oswald";
 }
 
 .flex ul {
   columns: 2;
-  width: 50%;
+  width: 90%;
+  text-align: left;
 }
 
-.line {
-  border-left: 1px solid #553d67;
-  height: 75px;
+.textbox {
+  height:38vh;
+  color: white;
+  border: 2px solid #062f42;
+  padding:0.5rem;
+  font-size:15px;
+  animation: card-entrance 700ms ease-out forwards;
 }
 
-.email {
-  margin-left: 0.5rem;
-  align-content: center;
-}
-
-.block {
-  display: flex;
-  vertical-align: middle;
+.textbox h4{
+  font-size: 18px;
 }
 
 .flex li::marker {
-  color: #553d67;
+  color: #04fff7;
   height: 50px;
+}
+
+@keyframes appear {
+  from {opacity:0}
+  to {opacity: 1}
 }
 
 @keyframes img-entrance {
@@ -61,6 +59,16 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes flip-with-rotate {
+  0% {
+      transform: perspective(400px) rotateY(0);
+  }
+
+  100% {
+      transform: perspective(400px) rotateY(180deg);
   }
 }
 
@@ -76,9 +84,6 @@
 }
 
 @media (max-width: 550px) {
-  .flex {
-    height: 375px;
-  }
 
   .flex h2 {
     font-size: 10px;
@@ -86,16 +91,18 @@
   }
 
   .flex p {
-    font-size: 11px;
-  }
-  .flex li {
     font-size: 12px;
   }
+  .flex li {
+    font-size: 15px;
+  }
   .flex ul {
-    width: 80%;
+    width: 100%;
     margin-left: -20px;
   }
-  .line{
-    height: 40px;
+  .textbox {
+    text-align: left;
+    border: 2px dashed #29001b;
   }
+
 }

@@ -24,16 +24,14 @@ const ContactMe = (props) => {
 
   return (
     <Modal onClick={props.onClick}>
-      <h1 className={classes.title}>CONTACT ME.</h1>
-      <h3 className={classes.email}>kimberleythuyne@gmail.com</h3>
+      <p className={classes.email}>kimberleythuyne@gmail.com</p>
+      <h1 className={classes.title}>Contact Me.</h1>
     <form ref={form} onSubmit={sendEmail} className={classes.form}>
-      <label>Name</label>
-      <input type="text" name="user_name" required/><br></br>
-      <label>Email</label>
+      <label>Email:</label>
       <input type="email" name="user_email" required/>
       <div className={classes.container}>
       <label>Message</label>
-      <textarea name="message" className={classes.message} required/>
+      <textarea name="message" required/>
       </div>
       <input type="submit" value="Send" className={classes.button}/>
     </form>

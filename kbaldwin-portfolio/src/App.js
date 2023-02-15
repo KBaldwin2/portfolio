@@ -24,22 +24,8 @@ function App() {
 
   useEffect(() => {
     const imgs = [
-      "./assets/Home/Home (2).png",
-      "./assets/Home/Home (3).png",
-      "./assets/Home/Home (4).png",
-      "./assets/Home/Home (5).png",
-      "./assets/Home/Home.png",
-      "./assets/Home/Home (6).png",
-      "./assets/me.png",
-      "./assets/hiking.jpeg",
-      "./assets/skiing.png",
-      "./assets/portugal.png",
-      "./assets/oilRig.png",
-      "./assets/inToronto.png",
-      "./assets/iceWaterRescue.png",
-      "./assets/crossCountrySki.png",
-      "./assets/biking.png",
-      "./assets/mountain2.png",
+      "./assets/octo.png",
+      "./assets/octoPhone.png",
     ];
     cacheImages(imgs);
   }, []);

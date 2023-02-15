@@ -1,144 +1,224 @@
 .typewriter h1 {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
-  font-weight: 700;
+  font-family: "Oswald";
+  font-size: 85px;
+  font-weight: 600;
   white-space: nowrap;
+  opacity:0;
   margin: 1 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 3.5s steps(45, end);
+  animation: typing 2.5s steps(100, end) forwards;
+  animation-delay: 1s;
 }
 
 .typewriter {
-  margin-left: 20%;
-  margin-right: 30%;
-  word-wrap: normal;
+  margin-top: 6vh;
 }
 
-.typewriter h2 {
+.text {
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 100;
-  margin: 1 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  margin-left: 56%;
+  position: relative;
+  top: 14vh;
+}
 
+.text p {
+  margin-bottom: -7vh;
+}
+
+.p-1 {
+  animation: appear 1s ease-in forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+  padding: 0.2rem;
+  color:#ff05ac;
+}
+
+.p-2 {
+  animation: appear 1s ease-in forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
+  padding: 0.2rem;
+  color:#05e12a;
+}
+
+.p-3 {
+  animation: appear 1s ease-in forwards;
+  animation-delay: 5.5s;
+  opacity: 0;
+  padding: 0.2rem;
+  color:#e14b05;
+}
+
+.flexBox {
+  display:flex;
+  margin-left: 53%;
+  position: relative;
+  top: 13vh;
 }
 
 .container {
-  height: 86vh;
+  height: 92vh;
   background-size: 100%;
-  background-image: none;
+  background-image: url('../../assets/Home/octo.png');
   background-repeat: no-repeat;
-  background-position: 0 0;
-  animation: animatedTriangle 8s infinite ease-out forwards;
+  animation: 1s slide-over;
 }
 
-.typewriter {
-  max-width: 100%;
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes animatedTriangle {
+@keyframes slide-over {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-fade-out {
   0% {
-    background-image: url("/public/images/Home/Home(2).png");
+    opacity: 0;
   }
-  15% {
-    background-image: url("/public/images/Home/Home(3).png");
-  }
-  40% {
-    background-image: url("/public/images/Home/Home(4).png");
-  }
-  55% {
-    background-image: url("/public/images/Home/Home(5).png");
-  }
-  70% {
-    background-image: url("/public/images/Home/Home.png");
-  }
-  85% {
-    background-image: url("/public/images/Home/Home(6).png");
+  50% {
+    opacity: 1;
   }
   100% {
-    background-image: url("/public/images/Home/Home(2).png");
+    opacity: 0;
   }
 }
 
-@keyframes animatedTrianglePhone {
-  0% {
-    background-image: url("/public/images/Home/HomePhone.png");
-  }
-  25% {
-    background-image: url("/public/images/Home/HomePhone2.png");
-  }
-  40% {
-    background-image: url("/public/images/Home/HomePhone3.png");
-  }
-  55% {
-    background-image: url("/public/images/Home/HomePhone4.png");
-  }
-  70% {
-    background-image: url("/public/images/Home/HomePhone4.png");
-  }
-  85% {
-    background-image: url("/public/images/Home/HomePhone6.png");
-  }
-  100% {
-    background-image: url("/public/images/Home/HomePhone.png");
-  }
-}
 
 
 /* The typing effect */
 @keyframes typing {
   from {
+    opacity: 1;
     width: 0;
   }
   to {
+    opacity: 1;
     width: 100%;
   }
 }
 
-.img {
-  height: 100%;
-  animation: slide-over 1500ms ease-out forwards;
-  display: flex;
-}
 
 @media (max-width:1000px) and (min-width:550px) {
-  .container {
-    background-size: 130%;
-    animation: animatedTrianglePhone 17s infinite ease-out forwards;
-  }
-
   .typewriter h1 {
-    margin-top: 0;
+    font-size: 70px;
+    animation: typing 3s steps(45, end) forwards;
+    
+  }
+  .container {
+    background-size: cover;
+    background-image: url('../../assets/Home/octoPhone.png');
+    animation: 1s slide-over;
   }
 
-  .typewriter {
+  .text {
+    margin-left: 3%;
+    top: 60px;
+  }
+
+  .text p {
+    margin-bottom: -40px;
+  
+  }
+
+  .flexBox {
+    font-size: 1.5rem;
     position: relative;
-    top: 75px;
-    margin-left: 5%;
+    margin-left: 3%;
+    top:10vh;
+    text-align: left;
+  }
+
+  .p-1 {
+    position: absolute;
+    animation: 2s appear forwards;
+    animation-delay: 7s;
+    padding:0;
+  }
+  
+  .p-2 {
+    position: absolute;
+    opacity: 0;
+    animation: 2s fade-in-fade-out;
+    animation-delay: 3s;
+    padding:0;
+  }
+  
+  .p-3 {
+    position: absolute;
+    opacity: 0;
+    animation: 2s fade-in-fade-out;
+    animation-delay: 5s;
+    padding:0;
   }
 }
 
 @media (max-width:550px) {
   .typewriter h1 {
-    font-size: 50px;
-    margin-top: 0;
-    animation: typing 3s steps(45, end);
+    font-size: 60px;
+    animation: typing 3s steps(45, end) forwards;
   }
+  
   .container {
-    background-size: 150%;
-    animation: animatedTrianglePhone 17s infinite ease-out forwards;
+    background-size: 110%;
+    background-image: url('../../assets/Home/octoPhone.png');
+    animation: 1s slide-over;
   }
 
-  .typewriter h2 {
-    font-size: 6vw;
+  .text {
+    margin-left: 3%;
+    top: 40px;
   }
 
-  .typewriter {
+  .text p {
+    margin-bottom: -30px;
+  
+  }
+
+  .flexBox {
+    font-size: 1.5rem;
     position: relative;
-    top: 90px;
-    margin-left: 5%;
+    margin-left: 3%;
+    top:5vh;
+    text-align: left;
   }
+
+  .p-1 {
+    position: absolute;
+    animation: 2s appear forwards;
+    animation-delay: 7s;
+    padding:0;
+  }
+  
+  .p-2 {
+    position: absolute;
+    opacity: 0;
+    animation: 2s fade-in-fade-out;
+    animation-delay: 3s;
+    padding:0;
+  }
+  
+  .p-3 {
+    position: absolute;
+    opacity: 0;
+    animation: 2s fade-in-fade-out;
+    animation-delay: 5s;
+    padding:0;
+  }
+
 
 }

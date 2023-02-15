@@ -1,5 +1,5 @@
-import classes from './Footer.module.css';
-
+import classes from "./Footer.module.css";
+import { SocialIcon } from "react-social-icons";
 
 export default function Footer(props) {
   return (
@@ -7,13 +7,28 @@ export default function Footer(props) {
       <nav className={classes.nav}>
         <ul>
           <li>
-          <a href="https://www.linkedin.com/in/kimberley-baldwin-17694894/" className={classes.active} target="_blank">LinkedIn</a>
+            <SocialIcon
+              bgColor="white"
+              url="https://www.linkedin.com/in/kimberley-baldwin-17694894/"
+            />
           </li>
           <li>
-          <a href="https://onedrive.live.com/?authkey=%21AHvSgISQDBgjmDk&cid=D48043C226FCD37D&id=D48043C226FCD37D%2115397&parId=root&o=OneUp" target="_blank" className={classes.active}>Resume</a>
+            <SocialIcon
+              label="Resume"
+              bgColor="white"
+              url="https://onedrive.live.com/?authkey=%21AHvSgISQDBgjmDk&cid=D48043C226FCD37D&id=D48043C226FCD37D%2115397&parId=root&o=OneUp"
+            />
           </li>
           <li>
-          <a href="" onClick={props.onClick} className={classes.active}>Email</a>
+          <SocialIcon
+              label="Resume"
+              bgColor="white"
+              network="email"
+              onClick={props.onClick}
+            />
+          </li>
+          <li>
+            <SocialIcon bgColor="white" url="https://github.com/KBaldwin2" />
           </li>
         </ul>
       </nav>

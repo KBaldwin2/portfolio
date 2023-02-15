@@ -1,19 +1,21 @@
 import classes from "./Home.module.css";
 import React from "react";
+import Card from "react-bootstrap/Card";
 
 export default function Home() {
-
   return (
     <React.Fragment>
       <div className={classes.container}>
-        <div className={classes.typewriter} style={{ marginRight: "0" }}>
-          <h1>Hi, I'm Kim!</h1>
+        <div className={classes.text}>
+          <p>Hi! My name is</p>
+          <div className={classes.typewriter}>
+            <h1>Kim Baldwin.</h1>
+          </div>
         </div>
-        <div className={classes.typewriter}>
-          <h2>
-            I am a software developer with a passion for design and building
-            clean, user-friendly applications.
-          </h2>
+        <div className={classes.flexBox}>
+          <p className={classes["p-1"]}> Software Developer. </p>
+          <p className={classes["p-2"]}> Environmental Engineer. </p>
+          <p className={classes["p-3"]}> Taco Tuesday Advocate. </p>
         </div>
       </div>
     </React.Fragment>

@@ -8,18 +8,18 @@ export default function ProjectCard(props) {
   return (
     <Modal onClick={props.onClick}>
       <Flex className={classes.content}>
-        <Box width={6.75 / 8}>
+        <Box width={6.5 / 8}>
           <div className={classes.content}>{props.children}</div>
         </Box>
-        <Box width={1.25 / 8} className={classes["right-box"]}>
+        <Box width={1.5 / 8} className={classes["right-box"]}>
           <TechStack
             stack1={props.stack1}
             stack2={props.stack2}
             stack3={props.stack3}
           />
           <div>
-            <a href={props.link} target="_blank">
-              <img src={arrow} alt="Arrow" className={classes.image} />
+            <a href={props.link} target="_blank" className={classes.link}>
+              Learn More
             </a>
           </div>
         </Box>

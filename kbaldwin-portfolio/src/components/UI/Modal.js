@@ -1,5 +1,4 @@
-import CardContainer from "./CardContainer";
-import Button from "./Button";
+
 import classes from "./Modal.module.css";
 
 export default function Modal(props) {

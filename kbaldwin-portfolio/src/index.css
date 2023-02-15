@@ -1,13 +1,23 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono';
   font-weight: 100;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #41B3A3;
+  background-color: #062f42;
+  background-image: url("./assets/Home/octoOpac.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 code {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Mono', sans-serif;
   font-weight: 100;
+}
+
+@media screen and (max-width:1000px) {
+  body {
+    background-size: 130%;
+    background-image: url("./assets/Home/octoOpacPhone.png");
+  }
 }
