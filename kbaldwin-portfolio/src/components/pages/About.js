@@ -39,7 +39,7 @@ export default function About() {
             <p>
               I am currently completing my Masters of Software Engineering at
               the University of Calgary. I have three years of work experience
-              as an engineer in training. I have worked with startups experience
+              as an engineer in training. I have worked with startups
               and am comfortable utilizing SCRUM and Agile methodologies.
             </p>
 

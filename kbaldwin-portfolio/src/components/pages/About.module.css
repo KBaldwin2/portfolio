@@ -11,7 +11,7 @@
   height: 50px;
   opacity: 0;
   animation: float-in 1s forwards;
-  animation-delay: 3s;
+  animation-delay: 2s;
 }
 
 .button:hover {
