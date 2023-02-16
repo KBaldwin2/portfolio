@@ -117,13 +117,11 @@
 @media screen and (max-width:1000px) and (min-width:550px) {
   .typewriter h1{
     font-size: 75px;
-    white-space: nowrap;
 
   }
 
   .typewriter {
     max-width: 100%;
-    word-wrap: normal;
   }
   .container {
     background-size: cover;
