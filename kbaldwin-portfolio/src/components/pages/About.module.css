@@ -88,6 +88,12 @@
     width: 100%;
   }
 
+  .flex {
+    margin: 0.5rem;
+    margin: 1.5%;
+  }
+  
+
   .page {
     background-image: url("../../assets/mountainPhoneBackground.png");
     background-size: 130%;
