@@ -117,7 +117,7 @@
 @media screen and (max-width:1000px) and (min-width:550px) {
   .typewriter h1{
     font-size: 75px;
-    white-space:normal;
+    white-space: nowrap;
 
   }
 
