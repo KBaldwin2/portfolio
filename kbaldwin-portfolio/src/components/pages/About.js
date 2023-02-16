@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import Loading from "../UI/Loading";
 
 //Images
-import mountains from "../../assets/mountaineeres.jpeg";
+import mountains from "../../assets/mountaineeres.png";
 import mountains2 from "../../assets/mountain2.png";
 import crossCountry from "../../assets/crossCountrySki.png";
 import inToronto from "../../assets/inToronto.png";
