@@ -40,8 +40,9 @@
   @media (max-width: 550px) {
     .modal {
       width: 90%;
-      left: 2.5%;
+      left: 5%;
       max-height: 40rem;
+      top: 2%;
     }
 
     .container {
