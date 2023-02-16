@@ -174,7 +174,6 @@
 @media screen and (max-width:550px) {
   .typewriter h1{
     font-size: 55px;
-    white-space: pre-wrap;
   }
 
   .typewriter {
