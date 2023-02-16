@@ -2,10 +2,10 @@
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   color: white;
   font-family: "Oswald";
-  font-size: 85px;
   font-weight: 600;
   white-space: nowrap;
   opacity:0;
+  font-size: 90px;
   margin: 1 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 2.5s steps(100, end) forwards;
@@ -14,11 +14,12 @@
 
 .typewriter {
   margin-top: 6vh;
+
 }
 
 .text {
   color: white;
-  margin-left: 56%;
+  margin-left: 55%;
   position: relative;
   top: 14vh;
 }
@@ -113,11 +114,16 @@
 }
 
 
-@media (max-width:1000px) and (min-width:550px) {
-  .typewriter h1 {
-    font-size: 70px;
-    animation: typing 3s steps(45, end) forwards;
-    
+@media screen and (max-width:1000px) and (min-width:550px) {
+  .typewriter h1{
+    font-size: 75px;
+    white-space: pre-wrap;
+
+  }
+
+  .typewriter {
+    max-width: 100%;
+    word-wrap: normal;
   }
   .container {
     background-size: cover;
@@ -167,10 +173,15 @@
   }
 }
 
-@media (max-width:550px) {
-  .typewriter h1 {
-    font-size: 60px;
-    animation: typing 3s steps(45, end) forwards;
+@media screen and (max-width:550px) {
+  .typewriter h1{
+    font-size: 55px;
+    white-space: pre-wrap;
+  }
+
+  .typewriter {
+    max-width: 100%;
+    word-wrap: normal;
   }
   
   .container {
