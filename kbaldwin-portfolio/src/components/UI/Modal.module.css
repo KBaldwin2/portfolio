@@ -41,6 +41,7 @@
     .modal {
       width: 90%;
       left: 2.5%;
+      max-height: 40rem;
     }
 
     .container {
