@@ -34,7 +34,6 @@
   border: 2px solid #062f42;
   padding:0.5rem;
   font-size:15px;
-  animation: card-entrance 700ms ease-out forwards;
 }
 
 .textbox h4{
@@ -46,40 +45,19 @@
   height: 50px;
 }
 
-@keyframes appear {
-  from {opacity:0}
-  to {opacity: 1}
+.loader {
+  animation: loader-exit 2s forwards;
+  animation-delay: 1s;
 }
 
-@keyframes img-entrance {
+@keyframes loader-exit {
   from {
-    opacity: 0;
-    transform: translateY(-3rem);
+    opacity: 1;
+    transform: translateY(0rem);
   }
   to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes flip-with-rotate {
-  0% {
-      transform: perspective(400px) rotateY(0);
-  }
-
-  100% {
-      transform: perspective(400px) rotateY(180deg);
-  }
-}
-
-@keyframes card-entrance {
-  from {
     opacity: 0;
-    transform: translateY(3rem);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+    transform: translateY(10rem);
   }
 }
 

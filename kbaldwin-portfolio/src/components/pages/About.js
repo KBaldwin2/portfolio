@@ -21,15 +21,14 @@ import montreal from "../../assets/montreal.png";
 import mexico from "../../assets/mexico.png";
 
 export default function About() {
-  const [isLoading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(() => {
-    setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 4400);
   }, []);
-  
+
   const width = window.innerWidth;
   const breakpoint = 1200;
   let spacing;
@@ -46,7 +45,7 @@ export default function About() {
   return (
     <React.Fragment>
       {isLoading ? (
-        <Loading />
+        <Loading className={classes.loader}/>
       ) : (
         <div className={classes.page}>
           <Flex className={classes.flex}>

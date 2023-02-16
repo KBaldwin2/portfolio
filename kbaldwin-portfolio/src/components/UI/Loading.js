@@ -1,9 +1,10 @@
-import classes from './Loading.module.css';
+
+import DotLoader from "react-spinners/DotLoader";
+
 
 export default function Loading() {
     return (
-        <div className={classes.container}>
-            <h1>Loading...</h1>
-        </div>
+        <DotLoader color={"#ff05ac"} size={150} cssOverride={{display: "block",
+        margin: "10% auto auto", width: "150px"}}/>
     )
 }
