@@ -63,9 +63,6 @@
   }
 
   @media (max-width:550px) {
-    .display{
-    margin-bottom: -100px;
-    }
 
     .display:hover .button {
       opacity: 0;
