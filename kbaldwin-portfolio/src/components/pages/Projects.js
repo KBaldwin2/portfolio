@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../UI/Title";
 import Video from "../UI/Video";
 import ProjectCard from "../Projects/ProjectModal";
-import ProjectDisplay from "../Projects/ProjectDisplay";
 import { useState } from "react";
 import classes from "./Projects.module.css";
 import { Flex, Box, Text, Image } from "rebass";
@@ -31,6 +30,15 @@ import autofiConnection from "../../assets/AutoFi/autofi_connection_diagram.png"
 import autofiPhotos from "../../assets/AutoFi/autofi_feature_photos.png";
 import autofiOverview from "../../assets/AutoFi/autofi_project_overview.png";
 
+//TrailCollectiv
+import trailCollectivThumbnail from "../../assets/TrailCollectiv/trailCollectivThumbnail.png";
+import trailCollectivOverview from '../../assets/TrailCollectiv/trailCollectiv_projectTitle.png';
+import trailCollectivePhotos from '../../assets/TrailCollectiv/trailCollectiv_project_2.png'
+
+//Aerium
+import aeriumThumbnail from '../../assets/Aerium/aeriumThumbnail.png';
+import aeriumTitle from '../../assets/Aerium/aerium_title.png';
+
 //Logos Import
 import java from "../../assets/logos/java.png";
 import sql from "../../assets/logos/sql.png";
@@ -42,6 +50,10 @@ import postgresql from "../../assets/logos/postgresql.png";
 import html from "../../assets/logos/html.png";
 import springboot from "../../assets/logos/springboot.png";
 import nextJS from "../../assets/logos/nextJS.png";
+import reactnative from '../../assets/logos/reactnative.png';
+import aws from '../../assets/logos/aws.png';
+import blazor from '../../assets/logos/blazor.png';
+import clogo from '../../assets/logos/csharp.png';
 
 export default function Projects() {
   const [modalOpen, setModal] = useState(false);
@@ -70,7 +82,7 @@ export default function Projects() {
           stack1={<img src={react} alt="React" className={classes.image} />}
           stack2={<img src={nodejs} alt="NodeJS" className={classes.image} />}
           stack3={
-            <img src={postgresql} alt="PostgreSQL" className={classes.image} />
+            <img src={aws} alt="Amazon Web Services" className={classes.image} />
           }
           onClick={closeModal}
         >
@@ -151,12 +163,55 @@ export default function Projects() {
         </ProjectCard>
       ),
     },
+    {
+      id: "trailcollectiv",
+      data: (
+        <ProjectCard
+          title="TrailCollectiv"
+          link="https://www.trailcollectiv.com/"
+          stack1={<img src={nodejs} alt="NodeJS" className={classes.image} />}
+          stack2={<img src={reactnative} alt="React Native" className={classes.image} />}
+          stack3={<img src={aws} alt="Amazon Web Services" className={classes.image} />}
+          onClick={closeModal}
+        >
+          <img
+            className={classes.image}
+            src={trailCollectivOverview}
+            alt="Mobile app photos"    
+          />
+          <img
+            className={classes.image}
+            src={trailCollectivePhotos}
+            alt="Trail photos"
+          />
+        </ProjectCard>
+      ),
+    },
+    {
+      id: "aerium",
+      data: (
+        <ProjectCard
+          title="Aerium"
+          link="https://aeriumanalytics.com/"
+          stack1={<img src={clogo} alt="C#" className={classes.image} />}
+          stack2={<img src={blazor} alt="Blazor" className={classes.image} />}
+          stack3={null}
+          onClick={closeModal}
+        >
+          <img
+            className={classes.image}
+            src={aeriumTitle}
+            alt="Aerium overview"    
+          />
+        </ProjectCard>
+      ),
+    },
   ];
 
   return (
     <CardContainer>
       {modalOpen && modalData}
-      <Title>PROJECTS</Title>
+      <Title>PROJECTS & EXPERIENCE.</Title>
       <ProjectList projects={projects} onClick={projectSelect} />
     </CardContainer>
   );
@@ -172,11 +227,16 @@ const projects = [
     title: "autofi",
   },
   {
-    image: hackathon,
-    title: "hackathon",
+    image:trailCollectivThumbnail,
+    title: "trailcollectiv"
+  },
+
+  {
+    image: aeriumThumbnail,
+    title: "aerium"
   },
   {
-    image: movieThumbnail,
-    title: "movie",
+    image: hackathon,
+    title: "hackathon",
   },
 ];
