@@ -19,6 +19,7 @@ import paytrailPhotos from "../../assets/PayTrail/paytrail_photo_collage.png";
 import hackathonThumbnail from "../../assets/Hackathon/hackathonVideoTrimmed.mp4";
 import hackathon from "../../assets/Hackathon/hackathonThumbnail.png";
 import hackathonProcess from "../../assets/Hackathon/hackathon.png";
+import hackathontwo from '../../assets/Hackathon/hackathon_2.png';
 
 //Movie Theatre
 import movieTheatre from "../../assets/Movie/movieTheatre.png";
@@ -26,7 +27,6 @@ import movieThumbnail from "../../assets/Movie/movieThumbnail.png";
 
 //AutoFi
 import autofiThumbnail from "../../assets/AutoFi/autoFiThumbnail.png";
-import autofiConnection from "../../assets/AutoFi/autofi_connection_diagram.png";
 import autofiPhotos from "../../assets/AutoFi/autofi_feature_photos.png";
 import autofiOverview from "../../assets/AutoFi/autofi_project_overview.png";
 
@@ -38,6 +38,7 @@ import trailCollectivePhotos from '../../assets/TrailCollectiv/trailCollectiv_pr
 //Aerium
 import aeriumThumbnail from '../../assets/Aerium/aeriumThumbnail.png';
 import aeriumTitle from '../../assets/Aerium/aerium_title.png';
+import aeriumtwo from '../../assets/Aerium/aerium_2.png';
 
 //Logos Import
 import java from "../../assets/logos/java.png";
@@ -91,12 +92,13 @@ export default function Projects() {
             src={paytrailNews}
             alt="News for PayTrail"
           />
-          <Video src={paytrailVideo} className={classes.video} />
+
           <img
             className={classes.image}
             src={paytrailPhotos}
             alt="News for PayTrail"
           />
+          <Video src={paytrailVideo} className={classes.video} />
         </ProjectCard>
       ),
     },
@@ -114,6 +116,11 @@ export default function Projects() {
           <img
             className={classes.image}
             src={hackathonProcess}
+            alt="Hackathon Process"
+          />
+          <img
+            className={classes.image}
+            src={hackathontwo}
             alt="Hackathon Process"
           />
           <Video src={hackathonThumbnail} className={classes.video} />
@@ -134,7 +141,7 @@ export default function Projects() {
           <img
             className={classes.image}
             src={autofiPhotos}
-            alt="Web application photos"    
+            alt="Web application photos"
           />
           <img
             className={classes.image}
@@ -158,7 +165,7 @@ export default function Projects() {
           <img
             className={classes.image}
             src={movieTheatre}
-            alt="Web application photos"    
+            alt="Web application photos"
           />
         </ProjectCard>
       ),
@@ -177,7 +184,7 @@ export default function Projects() {
           <img
             className={classes.image}
             src={trailCollectivOverview}
-            alt="Mobile app photos"    
+            alt="Mobile app photos"
           />
           <img
             className={classes.image}
@@ -201,7 +208,12 @@ export default function Projects() {
           <img
             className={classes.image}
             src={aeriumTitle}
-            alt="Aerium overview"    
+            alt="Aerium overview"
+          />
+          <img
+            className={classes.image}
+            src={aeriumtwo}
+            alt="Aerium Overview"
           />
         </ProjectCard>
       ),
@@ -227,7 +239,7 @@ const projects = [
     title: "autofi",
   },
   {
-    image:trailCollectivThumbnail,
+    image: trailCollectivThumbnail,
     title: "trailcollectiv"
   },
 

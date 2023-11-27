@@ -4,12 +4,22 @@
 }
 
 .right-box {
-    border-left: 1.5px solid #05386B;
+    border-left: 0.5px solid lightgray;
     padding-left: 1rem;
+}
+
+.left-box {
+    padding-right: 1rem;
 }
 
 .link {
     font-size: 18px;
+    text-align: center;
+}
+
+.linkDiv {
+    border-radius: 50px;
+    background-color: #04fff7;
 }
 
 @keyframes swipe {
