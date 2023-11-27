@@ -37,27 +37,24 @@ export default function About() {
           <div className={classes.flex}>
             <Title>ABOUT ME.</Title>
             <p>
-              I am currently completing my Masters of Software Engineering at
-              the University of Calgary. I have three years of work experience
-              as an engineer in training. I have worked with startups
-              and am comfortable utilizing SCRUM and Agile methodologies.
+            I am a full stack developer with a Masters of Software Engineering from the University of Calgary. I have a wide variety of development experience specializing in .NET and React frameworks while utilizing SCRUM and Agile methodologies. I have worked on projects as a sole contractor, a member of a team and a founder.  
             </p>
 
             <div>
               <p>Some of the technologies I have experience with include:</p>
               <ul>
-                <li>Javascript</li>
+                <li>React Native</li>
                 <li>React</li>
 
                 <li>Java</li>
                 <li>Python</li>
 
                 <li>Node.js</li>
-                <li>C++</li>
+                <li>C#</li>
               </ul>
             </div>
             <a
-              href="https://onedrive.live.com/?authkey=%21AHvSgISQDBgjmDk&cid=D48043C226FCD37D&id=D48043C226FCD37D%2115397&parId=root&o=OneUp"
+              href="https://1drv.ms/b/s!An3T_CbCQ4DUgbVQVfH33y2kmieffQ?e=reV9I1"
               target="__blank"
             >
               <button className={classes.button}>Resume</button>
