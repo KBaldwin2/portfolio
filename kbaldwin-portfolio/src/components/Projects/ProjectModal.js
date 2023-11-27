@@ -1,8 +1,6 @@
 import Modal from "../UI/Modal";
 import classes from "./ProjectModal.module.css";
 import { Flex, Box, Text, Image } from "rebass";
-import TechStack from "./TechStack";
-import arrow from "../../assets/icons/arrow.png";
 
 export default function ProjectCard(props) {
   return (

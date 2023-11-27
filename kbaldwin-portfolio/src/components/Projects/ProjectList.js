@@ -1,7 +1,5 @@
 import { Grid } from "@mui/material";
 import ProjectDisplay from "./ProjectDisplay";
-import classes from "./ProjectList.module.css";
-import { useEffect, useState } from "react";
 
 export default function ProjectList(props) {
   const width = window.innerWidth;

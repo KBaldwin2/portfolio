@@ -40,21 +40,9 @@ import aeriumThumbnail from '../../assets/Aerium/aeriumThumbnail.png';
 import aeriumTitle from '../../assets/Aerium/aerium_title.png';
 import aeriumtwo from '../../assets/Aerium/aerium_2.png';
 
-//Logos Import
-import java from "../../assets/logos/java.png";
-import sql from "../../assets/logos/sql.png";
-import python from "../../assets/logos/python.png";
-import react from "../../assets/logos/react.png";
-import nodejs from "../../assets/logos/nodejs.png";
-import paytraillogo from "../../assets/logos/paytrail.png";
-import postgresql from "../../assets/logos/postgresql.png";
-import html from "../../assets/logos/html.png";
-import springboot from "../../assets/logos/springboot.png";
-import nextJS from "../../assets/logos/nextJS.png";
-import reactnative from '../../assets/logos/reactnative.png';
-import aws from '../../assets/logos/aws.png';
-import blazor from '../../assets/logos/blazor.png';
-import clogo from '../../assets/logos/csharp.png';
+//SGI
+import sgiThumbnail from '../../assets/sgi/sgiThumbnail.png';
+import sgiTitle from '../../assets/sgi/sgiTitle.png';
 
 export default function Projects() {
   const [modalOpen, setModal] = useState(false);
@@ -80,11 +68,6 @@ export default function Projects() {
         <ProjectCard
           title="PayTrail"
           link="https://mypaytrail.com/"
-          stack1={<img src={react} alt="React" className={classes.image} />}
-          stack2={<img src={nodejs} alt="NodeJS" className={classes.image} />}
-          stack3={
-            <img src={aws} alt="Amazon Web Services" className={classes.image} />
-          }
           onClick={closeModal}
         >
           <img
@@ -98,7 +81,10 @@ export default function Projects() {
             src={paytrailPhotos}
             alt="News for PayTrail"
           />
-          <Video src={paytrailVideo} className={classes.video} />
+          <div className={classes.video}>
+            <Video src={paytrailVideo} className={classes.video} />
+          </div>
+
         </ProjectCard>
       ),
     },
@@ -108,9 +94,6 @@ export default function Projects() {
         <ProjectCard
           title="Hackathon"
           link="https://github.com/KBaldwin2/nanoleaf"
-          stack1={<img src={python} alt="React" className={classes.image} />}
-          stack2={<img src={html} alt="NodeJS" className={classes.image} />}
-          stack3={null}
           onClick={closeModal}
         >
           <img
@@ -123,7 +106,10 @@ export default function Projects() {
             src={hackathontwo}
             alt="Hackathon Process"
           />
-          <Video src={hackathonThumbnail} className={classes.video} />
+          <div className={classes.video}>
+            <Video src={hackathonThumbnail} className={classes.video} />
+          </div>
+
         </ProjectCard>
       ),
     },
@@ -133,9 +119,6 @@ export default function Projects() {
         <ProjectCard
           title="Autofi"
           link="https://github.com/AutoFi-Feature-Flag-Management"
-          stack1={<img src={nextJS} alt="NextJS" className={classes.image} />}
-          stack2={<img src={nodejs} alt="NodeJS" className={classes.image} />}
-          stack3={null}
           onClick={closeModal}
         >
           <img
@@ -157,9 +140,6 @@ export default function Projects() {
         <ProjectCard
           title="Movie Theatre"
           link="https://github.com/KBaldwin2/ENSF614Project"
-          stack1={<img src={react} alt="React" className={classes.image} />}
-          stack2={<img src={springboot} alt="Springboot" className={classes.image} />}
-          stack3={<img src={java} alt="Java" className={classes.image} />}
           onClick={closeModal}
         >
           <img
@@ -176,9 +156,6 @@ export default function Projects() {
         <ProjectCard
           title="TrailCollectiv"
           link="https://www.trailcollectiv.com/"
-          stack1={<img src={nodejs} alt="NodeJS" className={classes.image} />}
-          stack2={<img src={reactnative} alt="React Native" className={classes.image} />}
-          stack3={<img src={aws} alt="Amazon Web Services" className={classes.image} />}
           onClick={closeModal}
         >
           <img
@@ -200,9 +177,6 @@ export default function Projects() {
         <ProjectCard
           title="Aerium"
           link="https://aeriumanalytics.com/"
-          stack1={<img src={clogo} alt="C#" className={classes.image} />}
-          stack2={<img src={blazor} alt="Blazor" className={classes.image} />}
-          stack3={null}
           onClick={closeModal}
         >
           <img
@@ -214,6 +188,22 @@ export default function Projects() {
             className={classes.image}
             src={aeriumtwo}
             alt="Aerium Overview"
+          />
+        </ProjectCard>
+      ),
+    },
+    {
+      id: "sgi",
+      data: (
+        <ProjectCard
+          title="SGI"
+          link="https://sgi.sk.ca/"
+          onClick={closeModal}
+        >
+          <img
+            className={classes.image}
+            src={sgiTitle}
+            alt="SGI overview"
           />
         </ProjectCard>
       ),
@@ -231,16 +221,12 @@ export default function Projects() {
 
 const projects = [
   {
-    image: paytrail,
-    title: "paytrail",
-  },
-  {
-    image: autofiThumbnail,
-    title: "autofi",
-  },
-  {
     image: trailCollectivThumbnail,
     title: "trailcollectiv"
+  },
+  {
+    image: paytrail,
+    title: "paytrail",
   },
 
   {
@@ -248,7 +234,18 @@ const projects = [
     title: "aerium"
   },
   {
+    image: autofiThumbnail,
+    title: "autofi",
+  },
+
+
+  {
+    image: sgiThumbnail,
+    title: "sgi"
+  },
+
+  {
     image: hackathon,
     title: "hackathon",
-  },
+  }
 ];
