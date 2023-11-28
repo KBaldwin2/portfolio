@@ -5,7 +5,6 @@
 
 .right-box {
     border-left: 0.5px solid lightgray;
-    padding-left: 1rem;
 }
 
 .left-box {
@@ -13,14 +12,17 @@
 }
 
 .link {
-    font-size: 18px;
-    text-align: center;
-    color: black
+    width:100%;
+}
+
+.image {
+    width: 100% ;
+    height: auto ;
 }
 
 .linkDiv {
-    border-radius: 50px;
-    background-color: #04fff7;
+    height: 1.5rem;
+    text-align: center;
 }
 
 @keyframes swipe {

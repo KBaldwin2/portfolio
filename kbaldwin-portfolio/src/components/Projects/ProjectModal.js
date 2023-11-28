@@ -2,6 +2,9 @@ import Modal from "../UI/Modal";
 import classes from "./ProjectModal.module.css";
 import { Flex, Box, Text, Image } from "rebass";
 
+
+import learnMore from '../../assets/learnMoreButton.png';
+
 export default function ProjectCard(props) {
   return (
     <Modal onClick={props.onClick}>
@@ -10,11 +13,11 @@ export default function ProjectCard(props) {
           <div className={classes.content}>{props.children}</div>
         </Box>
         <Box width={1 / 8} className={classes["right-box"]}>
-          <div className={classes.linkDiv}>
-            <a href={props.link} target="_blank" className={classes.link}>
-              Learn More
+          
+            <a href={props.link} target="_blank" >
+              <img src={learnMore} className={classes.image}/>
             </a>
-          </div>
+          
         </Box>
       </Flex>
     </Modal>

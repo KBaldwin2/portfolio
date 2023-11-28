@@ -4,7 +4,6 @@ import Video from "../UI/Video";
 import ProjectCard from "../Projects/ProjectModal";
 import { useState } from "react";
 import classes from "./Projects.module.css";
-import { Flex, Box, Text, Image } from "rebass";
 import CardContainer from "../UI/CardContainer";
 import ProjectList from "../Projects/ProjectList";
 
