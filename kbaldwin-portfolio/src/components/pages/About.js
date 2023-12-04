@@ -54,7 +54,7 @@ export default function About() {
               </ul>
             </div>
             <a
-              href="https://1drv.ms/b/s!An3T_CbCQ4DUgbVQVfH33y2kmieffQ?e=reV9I1"
+              href="https://1drv.ms/b/s!An3T_CbCQ4DUgbVRjOriFLk9rVzmBw?e=BZWTjV"
               target="__blank"
             >
               <button className={classes.button}>Resume</button>

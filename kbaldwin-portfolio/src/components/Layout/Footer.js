@@ -10,25 +10,27 @@ export default function Footer(props) {
             <SocialIcon
               bgColor="white"
               url="https://www.linkedin.com/in/kimberley-baldwin-17694894/"
+              target="__blank"
             />
           </li>
           <li>
             <SocialIcon
               label="Resume"
               bgColor="white"
-              url="https://onedrive.live.com/?authkey=%21AHvSgISQDBgjmDk&cid=D48043C226FCD37D&id=D48043C226FCD37D%2115397&parId=root&o=OneUp"
+              url="https://1drv.ms/b/s!An3T_CbCQ4DUgbVRjOriFLk9rVzmBw?e=BZWTjV"
+              target="__blank"
             />
           </li>
           <li>
           <SocialIcon
-              label="Resume"
+              label="Email"
               bgColor="white"
               network="email"
               onClick={props.onClick}
             />
           </li>
           <li>
-            <SocialIcon bgColor="white" url="https://github.com/KBaldwin2" />
+            <SocialIcon bgColor="white" url="https://github.com/KBaldwin2" target="__blank"/>
           </li>
         </ul>
       </nav>
