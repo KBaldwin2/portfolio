@@ -31,11 +31,9 @@ export function PostPreview({
           {title}
         </Link>
       </h3>
-      <div className="flex items-center text-primary-pink text-lg mb-4">
+      <div className="flex flex-col lg:flex-row lg:items-center text-primary-pink text-lg mb-4">
         <DateFormatter dateString={date} />
-
-        <div className="bg-primary-pink w-2 h-2 rounded-full mx-2"></div>
-
+        <div className="lg:bg-primary-pink lg:w-2 lg:h-2 lg:rounded-full mx-2"></div>
         <p>{jobType}</p>
       </div>
 
