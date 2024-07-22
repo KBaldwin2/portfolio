@@ -5,6 +5,9 @@ type Props = {
 };
 
 const DateFormatter = ({ dateString }: Props) => {
+  if(!dateString) {
+    return "Current"
+  }
   const date = parseISO(dateString);
   return <time dateTime={dateString}>{format(date, "LLLL	yyyy")}</time>;
 };
