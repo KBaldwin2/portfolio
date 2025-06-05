@@ -1,6 +1,6 @@
 ---
 title: "Trail Collectiv"
-excerpt: "Mobile application for a startup trying to make hiking and the outdoors more accessible to families. Technologies used: Amazon Web Services, NodeJS, React Native, PostgreSQl."
+excerpt: "Mobile application for a startup trying to make hiking and the outdoors more accessible to families. Technologies used: Amazon Web Services, NodeJS, React Native, PostgreSQL."
 coverImage: "/assets/blog/trailcollectiv/cover.jpg"
 date: "2023-02-16T05:35:07.322Z"
 author:
@@ -9,7 +9,7 @@ author:
 ogImage:
   url: "/assets/blog/trailcollectiv/cover.jpg"
 website: "https://www.trailcollectiv.com/"
-jobType: "Contractor - Casual"
+jobType: "Contractor - Freelance"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.

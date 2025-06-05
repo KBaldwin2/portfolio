@@ -9,7 +9,7 @@ const DateFormatter = ({ dateString }: Props) => {
     return "Current"
   }
   const date = parseISO(dateString);
-  return <time dateTime={dateString}>{format(date, "LLLL	yyyy")}</time>;
+  return <time dateTime={dateString}>{format(date, "yyyy")}</time>;
 };
 
 export default DateFormatter;

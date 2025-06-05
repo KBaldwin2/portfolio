@@ -6,5 +6,5 @@ date: null
 ogImage:
   url: "/assets/blog/aerium/cover.jpg"
 website: "https://aeriumanalytics.com/"
-jobType: "Full Stack Developer - Full Time"
+jobType: "Software Developer Lead - Full Time"
 ---

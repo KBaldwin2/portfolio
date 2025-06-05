@@ -1,77 +1,47 @@
 
-import CoverImage from "@/app/_components/cover-image";
 import { Download, Github, Linkedin } from "lucide-react";
 
-type Props = {
-  title: string;
-  coverImage: string;
-  excerpt: string;
-  slug: string;
-};
-
-const languages: string[] = [
-  "C#",
-  "React",
-  "Typescript",
-  "Docker",
-  "NodeJS",
-  "Python",
-];
-
-export function AboutMePost({ title, coverImage, slug }: Props) {
+export function AboutMePost() {
   return (
-    <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} src={coverImage} slug={slug} />
-      </div>
-      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+    <section className="md:py-10 px-2 md:px-0">
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
         <div>
-            <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-              About Me.
-            </h2>
+          <h2 className="md:mb-8 mb-2 text-5xl md:text-7xl font-bold tracking-tighter leading-tight text-primary-pink">
+            About Me.
+          </h2>
 
-          <div className="grid gap-2 grid-cols-12">
+          <div className="grid gap-4 md:grid-cols-12 mb-2 grid-cols-8">
             <a
               href="https://www.linkedin.com/in/kimberley-baldwin-17694894/"
               target="_blank"
             >
-              <Linkedin
-                className="hover:border-b-4 border-light-pink"
-              />
+              <Linkedin className="hover:border-b-4 border-light-pink" />
             </a>
             <a href="https://github.com/KBaldwin2" target="_blank">
-              <Github
-                className="hover:border-b-4 border-light-pink"
-              />
+              <Github className="hover:border-b-4 border-light-pink" />
             </a>
 
-            <a href="/files/KBaldwin_CV.pdf" target="_blank" rel="noopener noreferrer">
-            <Download
-              className="hover:border-b-4 border-light-pink"
-            />
+            <a
+              href="/files/KBaldwin_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download className="hover:border-b-4 border-light-pink" />
             </a>
-
-
           </div>
         </div>
-        <div>
-          <p className="text-lg leading-relaxed my-4">
-            I am a full stack developer with a Masters of Software Engineering
-            from the University of Calgary. I have a wide variety of development
-            experience specializing in .NET and JS frameworks (including Node
-            and React). I have worked on projects as a sole contractor, a member
-            of a team and a founder.
+        <div className="space-y-4">
+          <p className="leading-relaxed text-sm md:text-lg">
+            I am a software engineer with a passion for startups and small
+            companies. I have a background in project engineering and software
+            development and I focus on creating robust technologies built with
+            scalable architecture and enhanced user experience. I have full
+            stack experience using a variety of languages and frameworks
+            including .Net and React.
           </p>
-
-          <p className="text-lg leading-relaxed mb-4">Key skills include:</p>
-          <div className="grid gap-2 lg:grid-cols-3">
-            {languages.map((x) => (
-              <div className="flex items-center" key={x}>
-                <div className="bg-secondary-pink w-2 h-2 rounded-full mr-2"></div>
-                <div className="text-xl font-bold text-secondary-pink">{x}</div>
-              </div>
-            ))}
-          </div>
+          <p className="leading-relaxed text-sm md:text-lg">
+            I enjoy talking about big ideas and meeting people through work and travel.
+          </p>
         </div>
       </div>
     </section>

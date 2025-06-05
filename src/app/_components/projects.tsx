@@ -7,24 +7,24 @@ type Props = {
 
 export function Projects({ posts }: Props) {
   return (
-    <section>
-      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
-        Projects.
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
-        {posts.map((post) => (
-          <PostPreview
-            key={post.slug}
-            title={post.title}
-            coverImage={post.coverImage}
-            date={post.date}
-            slug={post.slug}
-            excerpt={post.excerpt}
-            jobType={post.jobType}
-            website={post.website}
-          />
-        ))}
-      </div>
+    <section className="md:py-10 px-2 md:px-0 mb-6">
+        <h2 className="md:mb-8 mb-2 text-5xl md:text-7xl font-bold tracking-tighter leading-tight text-primary-pink">
+          Projects.
+        </h2>
+        <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-col-3 md:gap-x-2 lg:gap-x-8 gap-y-6">
+          {posts.map((post) => (
+            <PostPreview
+              key={post.slug}
+              title={post.title}
+              coverImage={post.coverImage}
+              date={post.date}
+              slug={post.slug}
+              excerpt={post.excerpt}
+              jobType={post.jobType}
+              website={post.website}
+            />
+          ))}
+        </div>
     </section>
   );
 }
