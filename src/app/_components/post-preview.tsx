@@ -22,7 +22,7 @@ export function PostPreview({
   jobType,
 }: Props) {
   return (
-    <div>
+    <div className="rounded-2xl bg-white/80">
       <div className="mb-4">
         <CoverImage
           slug={slug}

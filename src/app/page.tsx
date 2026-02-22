@@ -11,10 +11,10 @@ export default function Index() {
 
   const heroPost = allPosts[0];
 
-  const morePosts = allPosts.slice(1);
+  const morePosts = allPosts.filter((post) => post.slug !== "about-me");
 
   return (
-    <main className="space-y-6">
+    <main className="space-y-6 mx-2">
       <Container>
         <Intro />
         <CoverImage

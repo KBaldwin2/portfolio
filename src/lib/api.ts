@@ -22,7 +22,12 @@ export function getAllPosts(): Post[] {
   const slugs = getPostSlugs();
   const posts = slugs
     .map((slug) => getPostBySlug(slug))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+    // sort posts with current roles (null date) first, then by date descending
+    .sort((post1, post2) => {
+      if (!post1.date && !post2.date) return 0;
+      if (!post1.date) return -1;
+      if (!post2.date) return 1;
+      return post1.date > post2.date ? -1 : 1;
+    });
   return posts;
 }
